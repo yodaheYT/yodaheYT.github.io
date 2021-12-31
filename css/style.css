@@ -1,0 +1,44 @@
+html {background-color: #2c2f33;}
+
+h1 {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+h3 {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+p {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+title {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+body {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.TopNav {
+    overflow: hidden;
+    background-color: #23272a;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+}
+
+.active {
+    background-color: #7289da;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: underline;
+}
+.inactive {
+    background-color: #2c2f33;
+    padding: 10px;
+    border-radius: 8px;
+}
+/* Links */
+a:link {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a:visited {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a:hover {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@keyframes hoverLink {
+    to {color: bisque;}
+}
