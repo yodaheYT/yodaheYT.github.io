@@ -6,17 +6,18 @@
         <link rel="icon" type="image/x-icon" href="../Images/logo.PNG">
     </head>
     <h4 id="clock" class="clock"><center></center></h4>
-    <h1 id="TEXT"><center>UNTIL 2022 (HH:MM:SS)</center></h1>
+    <h1 id="TEXT"><center>UNTIL 2023 (DD:HH:MM:SS)</center></h1>
     <script>
-        var date = new Date("Jan 1, 2022 00:00:00").getTime();
+        var date = new Date("Jan 1, 2023 00:00:00").getTime();
         var x = setInterval(function() {
             var now = new Date().getTime();
             var distance = date - now;
+            var days = Math.floor(distance / (1000 * 60  * 60 * 24));
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+            document.getElementById("clock").innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
             if (distance < 0) {
                 document.getElementById("clock").innerHTML = "HAPPY NEW YEAR"
                 document.getElementById("TEXT").remove()
