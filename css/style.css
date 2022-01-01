@@ -2,9 +2,11 @@ html {background-color: #2c2f33;}
 
 h1 {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
 h3 {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+h4 {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 100px;}
 p {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
 title {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
 body {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+/*Nav*/
 .TopNav {
     overflow: hidden;
     background-color: #23272a;
@@ -26,6 +28,18 @@ body {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
     padding: 10px;
     border-radius: 8px;
 }
+/* Games */
+.Game {
+    background-color: #23272a;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
 /* Links */
 a:link {
     color: #ffffff;
@@ -38,7 +52,14 @@ a:visited {
 a:hover {
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: hoverLink 1s ease forwards;
 }
+
+
 @keyframes hoverLink {
-    to {color: bisque;}
+    to {color: #7289da;}
+}
+
+.clock {
+    text-align: center;
 }
