@@ -3,6 +3,7 @@ html {background-color: #2c2f33;}
 h1 {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
 h3 {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
 h4 {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 100px;}
+span {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 100px;}
 p {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
 title {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
 body {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
@@ -39,6 +40,7 @@ body {color: #ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;}
     width: 200px;
     height: 200px;
     margin: 10px;
+    float: left;
 }
 /* Links */
 a:link {
@@ -53,13 +55,53 @@ a:hover {
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     animation: hoverLink 1s ease forwards;
+    animation-iteration-count: infinite;
 }
 
+.Banner {
+    padding: 10px;
+    border-radius: 8px;
+    background-size: 100%;
+    animation: rgb 10s steps(13) forwards;
+    animation-iteration-count: infinite;
+}
+.Banner2 {
+    padding: 25px;
+    border-radius: 8px;
+    background-size: 100%;
+    background-color: #23272a;
+}
 
 @keyframes hoverLink {
-    to {color: #7289da;}
+    0% {color: #ffffff;}
+    50% {color: #7289da;}
+    100% {color: #ffffff}
 }
 
 .clock {
     text-align: center;
+}
+
+@keyframes rgb {
+    0% {background-color: red}
+    8% {background-color:  orange}
+    16% {background-color:  yellow}
+    24% {background-color:  green}
+    32% {background-color:  blue}
+    40% {background-color:  purple}
+    48% {background-color:  indigo}
+    56% {background-color:  purple}
+    64% {background-color:  blue}
+    72% {background-color:  green}
+    80% {background-color:  yellow}
+    88% {background-color:  orange}
+    100% {background-color:  red}
+}
+.Download {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #7289da;
+    float: middle;
+    margin: 10px;
+    width: 175px;
 }
