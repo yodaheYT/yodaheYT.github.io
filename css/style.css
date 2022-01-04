@@ -59,14 +59,14 @@ a:hover {
 }
 
 .Banner {
-    padding: 10px;
+    padding: 2%;
     border-radius: 8px;
     background-size: 100%;
     animation: rgb 10s steps(13) forwards;
     animation-iteration-count: infinite;
 }
 .Banner2 {
-    padding: 25px;
+    padding: 1%;
     border-radius: 8px;
     background-size: 100%;
     background-color: #23272a;
