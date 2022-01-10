@@ -1,2 +1,2 @@
-[LINK](https://yodaheyt.github.io)
-[LINK](https://github.com/yodaheYT/yodaheYT.github.io/blob/main/SECURITY.md)
+[Site](https://yodaheyt.github.io)
+[Security (Old Versions)](https://github.com/yodaheYT/yodaheYT.github.io/blob/main/SECURITY.md)
