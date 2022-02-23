@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title, favicon, and scripts -->
+        <title>yodahe - Videos</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/x-icon" href="../img/video.png">
+        <script src='../sidebar.js'></script>
+        <div id="DVAR12"></div>
+
+        <!-- Meta -->
+        <meta content="https://raw.githubusercontent.com/yodaheYT/images/main/new_logo.png" property="og:image">
+        <meta content="yodahe" property="og:title" />
+        <meta content="Game Dev" property="og:description" />
+        <meta content="https://yodaheyt.github.io" property="og:url" />
+    </head>
+    <body>
+        <div class="sidebar" id="sidebar">
+            <div class="logo">
+                <img src="../img/logo.png" height="100%">
+            </div>
+            <button class="sidebaroption" onclick="redirhome()">
+                <img src="../img/home.png">
+            </button>
+            <button class="sidebaroptionactive" onclick="redirVid()">
+                <img src="../img/video.png">
+            </button>
+            <button class="sidebaroption" onclick="redirFiles()">
+                <img src="../img/files.png">
+            </button>
+            <button class="sidebaroption" onclick="redirInfo()">
+                <img src="../img/info.png">
+            </button>
+        </div>
+        <div class="titleDiv">
+            <h1 style="font-family: etho;">My Videos</h1>
+            <div class="videoDiv">
+                <div class="videoArea">
+                    <h1 style="font-family: etho;">Latest Upload</h1>
+                    <embed src="https://www.tubebuddy.com/quicknav/latestembed/UCQdizMDaBihL8nOzI3v4I0Q" width="500vw" height="250vw">
+                </div>
+                <div class="videoArea">
+                    <h1 style="font-family: etho;">Twitch</h1>
+                    <div id="twitch-embed"></div>
+                    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+                    <script type="text/javascript">
+                        new Twitch.Player("twitch-embed", {
+                            width: "500vw",
+                            height: "250vw",
+                            channel: "yodaheyt"
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="footers">
+        <p style="font-size: 0.75vw;">&copy 2022 yodahe</p>
+    </footer>
+</html>
