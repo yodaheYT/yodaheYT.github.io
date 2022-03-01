@@ -26,3 +26,10 @@ function redirFiles() {
 
     document.getElementById('DVAR12').appendChild(meta);
 }
+function redirDisco() {
+    var meta = document.createElement('meta');
+    meta.httpEquiv = 'refresh';
+    meta.content = '0; url="../discord"';
+
+    document.getElementById('DVAR12').appendChild(meta);
+}
