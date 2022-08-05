@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title id="title"></title>
+        <div id="DVAR12"></div>
+        <title id="title">yodaheYT - Images</title>
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://yodaheyt.github.io/images/">
-        <meta property="og:title" content="yodaheYT - ">
+        <meta property="og:title" content="yodaheYT - images">
         <meta property="og:description" content="LOL image host">
         <meta property="og:image" content="">
+        <script src="template.js" type="module"></script>
         <style>
             @font-face {
                 font-family: etho;
@@ -20,8 +22,10 @@
             }
             .etho {
                 font-family: etho;
+                font-size: xx-large;
             }
             body {
+                border-radius: 8px;
                 margin: 0;
                 padding: 0;
                 background-color: #23272a;
@@ -39,14 +43,29 @@
                 font-size: 5vw;
             }
             img {
-                width: 50%;
+                height: 50vh;
+                object-fit: contain;
+            }
+            #back {
+                font-size: 2vw;
+                color: #ffffff;
+                background-color: #37393e;
+                border-radius: 8px;
+                border: 2px solid #ffffff;
+                padding: 0.5vw;
+                margin-top: 0.5vw;
+                cursor: pointer;
+                top: 3%;
+                left: 3%;
+                position: absolute;
             }
         </style>
     </head>
     <body>
         <div id="main">
-            <div id="title" class="etho">Test</div>
-            <img src="../img/download.png">
+            <h1 id="name" class="etho"></h1>
+            <img src="" id="imgs">
+            <a id="back" href="./">Back</a>
         </div>
     </body>
 </html>

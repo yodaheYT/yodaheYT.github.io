@@ -1,13 +1,15 @@
 function createElem(data) {
-    var div = document.createElement('div');
+    let div = document.createElement('div');
     div.id = 'img';
-    var h1 = document.createElement('h1');
+    let h1 = document.createElement('h1');
     h1.innerHTML = data.name;
-    var img = document.createElement('img');
+    let img = document.createElement('img');
     img.src = data.path;
-    img.alt = data.path;
+    img.alt = data.name;
     img.id = 'effort';
-    div.onclick = zoom(img);
+    div.addEventListener('mousedown', () => {
+        zoom(img);
+    }, {passive: true});
     div.appendChild(h1);
     div.appendChild(img);
     document.getElementById('images').appendChild(div);
@@ -25,17 +27,11 @@ async function getFiles() {
 }
 getFiles();
 function zoom(img) {
-    const src = img.src.split(REPO)[1];
-    const url = new URL(`yodaheyt.github.io/images/template.html?u=${src.split("/")[0]}`);
-    let params = new URLSearchParams(url.search.slice(1))
-    for (let p of params) {
-        console.log(p);
-    }
-    params.get('img') === "search string"
-    
-    const { searchParams } = new URL(location.href);
-    searchParams.toString() // => 'a=&b=123'
-    searchParams.has('a') // => true
-    searchParams.has('fake') // => false
-    searchParams.get('b')
+    console.log('test');
+    let src = img.src.split(REPO)[1];
+    console.log(src.split('/')[0])
+    let meta = document.createElement('meta');
+    meta.httpEquiv = 'refresh';
+    meta.content = `0; url='./template.html?img=${src.split('/')[0]}&name=${img.alt}'`;
+    document.getElementById('DVAR12').appendChild(meta);
 }
