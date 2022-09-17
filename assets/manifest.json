@@ -1,0 +1,10 @@
+{
+    "name": "yodahe",
+    "short_name": "yodahe",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#121212",
+    "theme_color": "#131313",
+    "orientation": "portrait-primary",
+    "description":"yodaheyt's official website."
+}
