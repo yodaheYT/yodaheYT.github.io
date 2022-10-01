@@ -17,4 +17,19 @@ const TWITCHELEM = document.getElementsByClassName("Twitch")[0];
 DISCORDELEM.addEventListener('click', () => {nav(DISCORDURL)});
 GITHUBELEM.addEventListener('click', () => {nav(GITHUBURL)});
 YOUTUBEELEM.addEventListener('click', () => {nav(YOUTUBEURL)});
-TWITCHELEM.addEventListener('click', () => {nav(TWITCHURL)})
+TWITCHELEM.addEventListener('click', () => {nav(TWITCHURL)});
+//ELEMSB
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            entry.target.classList.remove('hidden');
+        } else {
+            entry.target.classList.remove('show');
+            entry.target.classList.add('hidden');
+        }
+    })
+})
+const hidden = document.querySelectorAll('.hidden');
+hidden.forEach((el) => observer.observe(el));
