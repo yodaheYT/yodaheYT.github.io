@@ -64,4 +64,4 @@ setTimeout(() => {
     }, 1000);
     console.log(countDownDate);
     console.log(endTime);
-}, 3000);
+}, 500);
