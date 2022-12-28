@@ -1,6 +1,6 @@
 @font-face {
     font-family: etho;
-    src: url("./assets/fonts/ethnocentric.rg-regular.ttf");
+    src: url("../assets/fonts/ethnocentric.rg-regular.ttf");
 }
 html {
     background-color: #121212;
@@ -31,23 +31,9 @@ html {
     margin: 0;
     scroll-snap-type: y mandatory;
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: hidden;
     width: 100%;
     left: 0;
-    scrollbar-color: #00ff00 #99ff99;
-    scrollbar-width: thin;
-}
-::-webkit-scrollbar {
-    width: 7px;
-}
-::-webkit-scrollbar-track {
-    background: #99ff99;
-}
-::-webkit-scrollbar-thumb {
-    background: #00ff00;
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color: #007d02;
 }
 .cardtext {
     display: flex;
@@ -71,38 +57,4 @@ html {
     filter: blur(0);
     transform: translateX(0);
     transition: filter, transform 1s;
-}
-.card:hover {
-    background-color: #161616;
-}
-header h3 {
-    font-family: etho;
-}
-header {
-    width: 100%;
-    background-color: #181818;
-    height: 7vh;
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    z-index: 100;
-}
-header #con {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-}
-a {
-    color: #00ff00;
-}
-a:visited {
-    color: #99ff99;
-}
-a:hover {
-    color: #007d02
 }
