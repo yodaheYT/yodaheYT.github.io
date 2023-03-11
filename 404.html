@@ -10,33 +10,14 @@
                 <h3>yodahe</h3>
             </div>
         </header>
-        <div id="card" class="GitHub hidden">
-            <img src="./assets/images/err.png" alt="Error Logo">
-            <div id="cardtext">
-                <h1>We cannot find the requested page</h1>
-                <p>We couldn't find the page you're looking for.</p>
+        <div class="cards">
+            <div class="card show" id="404">
+                <img src="./assets/images/err.png" alt="Error">
+                <div class="cardtext">
+                    <h1>We cannot find the requested page</h1>
+                    <p>We couldn't find the page you're looking for.</p>
+                </div>
             </div>
-        </div>
-        <script defer>
-            //ELEMS
-            const GITHUBELEM = document.getElementsByClassName("GitHub")[0];
-            //ELEMSB
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    console.log(entry);
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('show');
-                        entry.target.classList.remove('hidden');
-                    } else {
-                        entry.target.classList.remove('show');
-                        entry.target.classList.add('hidden');
-                    }
-                })
-            })
-            const hidden = document.querySelectorAll('.hidden');
-            hidden.forEach((el) => observer.observe(el));
-        </script>
+        <script src="./javascript.js" defer></script>
     </body>
 </html>
-<!--TODO
--DISCORD-->
