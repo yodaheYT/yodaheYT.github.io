@@ -29,7 +29,7 @@
 //     let addZeroes = (num) => (num < 10 ? `0${num}` : num);
 //     if (endTime < todayTime) {
 //         clearInterval(f);
-//         countDownElem.innerText = "🎉Happy 2023";
+//         countDownElem.innerText = "🎉Happy 2024";
 //     } else {
 //         let daysLeft = Math.floor(remainingTime / oneDay);
 //         let hrsLeft = Math.floor((remainingTime % oneDay) / oneHr);
