@@ -25,7 +25,7 @@ let f = setInterval(() => {
     let oneMin = 60 * 1000;
     let oneHr = 60 * oneMin;
     let oneDay = 24 * oneHr;
-    document.querySelector(body).requestFullscreen();
+    document.getElementsByClassName("body")[0].requestFullscreen();
     let addZeroes = (num) => (num < 10 ? `0${num}` : num);
     if (endTime < todayTime) {
         clearInterval(f);
