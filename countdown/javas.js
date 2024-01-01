@@ -16,7 +16,7 @@
 
 // //Countdown
 // const countDownElem = document.getElementById("countdowntxt");
-// const countDownDate = new Date(2023, 0, 1, 00, 00);
+// const countDownDate = new Date(2024, 0, 1, 00, 00);
 // const endTime = countDownDate.getTime();
 // let f = setInterval(() => {
 //     let todayDate = new Date();
