@@ -4,7 +4,7 @@ setTimeout(() => {
         open(URL);
     }
     //URLS
-    const DISCORDURL = "https://discord.gg/6AHapJkhR6";
+    const DISCORDURL = "https://discord.gg/3AZwXCu3KH";
     const GITHUBURL = "https://github.com/yodaheYT";
     const YOUTUBEURL = "https://www.youtube.com/channel/UCQdizMDaBihL8nOzI3v4I0Q";
     const TWITCHURL = "https://www.twitch.tv/yodaheyt";
