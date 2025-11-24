@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Game Engine</title>
         <link rel="stylesheet" href="/styles.css" />
+        <script type="module" src="https://md-block.verou.me/md-block.js"></script>
     </head>
     <body>
         <div class="nav">
@@ -28,9 +29,10 @@
             </div>
         </div>
         <div class="body">
+            <img class="spanImage" src="/res/gameengine/screenshot1.png" alt="">
             <h1>Game Engine</h1>
-            <h2>A Simple Game Engine built off LibGDX</h2>
-            <h3>2025</h3>
+            <h3>A Simple Game Engine built off LibGDX</h3>
+            <h4>2025</h4>
             <p>
                 This is my current project, I have not chosen a name for it yet.
                 I am building an advanced game engine off LibGDX with no external libraries.
@@ -38,11 +40,49 @@
                 <br><br>
                 The engine will feature advanced physics, a custom audio engine, scenes, cameras, particles, animations, intuitive user interface tooling, built in networking, and more.
                 <br>
-                When there is more to show, the engines source code will slowly be updated on GitHub.
+                <a href="https://github.com/yodaheYT/physicsengine">GitHub Repo</a>
                 <br><br>
-                <h1>Roadmap:</h1>
+                <h1><a href="#roadmap">Roadmap</a>:</h1>
                 <br>
-                <img src="/res/gameengine/roadmap.png" alt="" class="screenshot">
+                <md-block>
+## `0.0.1` - Back to the Basics
+- [x] Rendering
+	- [x] Square
+		- [x] Primitive
+		- [x] Textured
+	- [x] Circle
+		- [x] Primitive
+	- [x] Rectangle
+		- [x] Primitive
+		- [x] Textured 
+	- [x] Text
+## `0.0.2` - Basic Games
+- [ ] Input
+	- [ ] Mouse
+	- [ ] Keyboard
+	- [ ] Controller
+- [ ] Sound
+	- [ ] Playback & Loading
+- [ ] Camera
+	- [ ] Ability to move around entire view
+- [ ] Components
+	- [ ] Tree style components system
+## `0.0.3` - User Interface
+- Buttons, Sliders, Text, Frames, Inputs, Images, etc.
+## `0.0.4` - Physics
+- Collision Engine, Velocities, Particles, etc.
+## `0.0.5` - Debugger
+- Swing based debugger that launches beside the game and allows inspection of variables, pausing the game loop, setting variables, and more
+## `0.0.6` - Animations
+- Animation Framework
+## `0.0.7` - Scenes
+- Scene System
+## `0.0.8` - Stability
+- Clean up the engine, optimize everything
+## `0.0.9` - Networking
+- Multiplayer, TCP sockets, server support, etc.
+# `0.1.0` - Major Release 1
+                </md-block>
             </p>
         </div>
         <div class="footer">
